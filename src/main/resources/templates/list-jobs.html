@@ -14,27 +14,27 @@
 
     <table class="job-listing" th:each="job : ${jobs}">
         <tr>
-            <td>ID</td>
+            <th>ID</th>
             <td th:text="${job.getId()}"> </td>
         </tr>
         <tr>
-            <td>Name</td>
+            <th>Name</th>
             <td th:text="${job.getName()}"></td>
         </tr>
         <tr>
-            <td>Employer</td>
+            <th>Employer</th>
             <td><a th:href="@{/list/jobs(column=employer,value=${job.getEmployer()})}" th:text="${job.getEmployer()}"></a></td>
         </tr>
         <tr>
-            <td>Location</td>
+            <th>Location</th>
             <td><a th:href="@{/list/jobs(column=location,value=${job.getLocation()})}" th:text="${job.getLocation()}"></a></td>
         </tr>
         <tr>
-            <td>Position Type</td>
+            <th>Position Type</th>
             <td><a th:href="@{/list/jobs(column=positionType,value=${job.getPositionType()})}" th:text="${job.getPositionType()}"></a></td>
         </tr>
         <tr>
-            <td>Skill</td>
+            <th>Skill</th>
             <td><a th:href="@{/list/jobs(coreCompetency=employer,value=${job.getCoreCompetency()})}" th:text="${job.getCoreCompetency()}"></a></td>
         </tr>
     </table>
