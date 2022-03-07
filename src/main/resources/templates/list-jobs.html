@@ -23,19 +23,19 @@
         </tr>
         <tr>
             <th>Employer</th>
-            <td><a th:href="@{/list/jobs(column=employer,value=${job.getEmployer()})}" th:text="${job.getEmployer()}"></a></td>
+            <td th:href="@{/list/jobs(column=employer,value=${job.getEmployer()})}" th:text="${job.getEmployer()}"></td>
         </tr>
         <tr>
             <th>Location</th>
-            <td><a th:href="@{/list/jobs(column=location,value=${job.getLocation()})}" th:text="${job.getLocation()}"></a></td>
+            <td th:href="@{/list/jobs(column=location,value=${job.getLocation()})}" th:text="${job.getLocation()}"></td>
         </tr>
         <tr>
             <th>Position Type</th>
-            <td><a th:href="@{/list/jobs(column=positionType,value=${job.getPositionType()})}" th:text="${job.getPositionType()}"></a></td>
+            <td th:href="@{/list/jobs(column=positionType,value=${job.getPositionType()})}" th:text="${job.getPositionType()}"></td>
         </tr>
         <tr>
             <th>Skill</th>
-            <td><a th:href="@{/list/jobs(coreCompetency=employer,value=${job.getCoreCompetency()})}" th:text="${job.getCoreCompetency()}"></a></td>
+            <td th:href="@{/list/jobs(coreCompetency=employer,value=${job.getCoreCompetency()})}" th:text="${job.getCoreCompetency()}"></td>
         </tr>
     </table>
 </div>
